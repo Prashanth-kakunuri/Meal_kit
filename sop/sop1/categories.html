@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Kits - Categories</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+   <!-- Navigation Bar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid ">
+        <a class="navbar-brand fw-semibold text-warning fs-3" href="#">Meal Kits.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link  fw-semibold text-warning px-4" href="HomePage.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#">Categories</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#blogSection">Blog</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#faqSection">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#userProfileSection">User Profile</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Meal Categories -->
+    <div class="container">
+        <h2 class="text-center">Meal Kit Categories</h2>
+        <div class="row">
+            <!-- Vegan Category -->
+            <div class="col-md-4 mb-4">
+                <div class="card category-card" onclick="categoryClick('Vegan')">
+                    <img src="https://via.placeholder.com/300x200?text=Vegan" class="card-img-top" alt="Vegan">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan</h5>
+                        <p class="card-text">Plant-based meals for a healthy lifestyle. No animal products included.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gluten-Free Category -->
+            <div class="col-md-4 mb-4">
+                <div class="card category-card" onclick="categoryClick('Gluten-Free')">
+                    <img src="https://via.placeholder.com/300x200?text=Gluten-Free" class="card-img-top" alt="Gluten-Free">
+                    <div class="card-body">
+                        <h5 class="card-title">Gluten-Free</h5>
+                        <p class="card-text">Gluten-free meal kits that cater to your dietary needs without compromising on taste.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Meals Category -->
+            <div class="col-md-4 mb-4">
+                <div class="card category-card" onclick="categoryClick('Family Meals')">
+                    <img src="https://via.placeholder.com/300x200?text=Family+Meals" class="card-img-top" alt="Family Meals">
+                    <div class="card-body">
+                        <h5 class="card-title">Family Meals</h5>
+                        <p class="card-text">Meal kits designed for family gatherings. Feed your loved ones with ease!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organic Category -->
+            <div class="col-md-4 mb-4">
+                <div class="card category-card" onclick="categoryClick('Organic')">
+                    <img src="https://via.placeholder.com/300x200?text=Organic" class="card-img-top" alt="Organic">
+                    <div class="card-body">
+                        <h5 class="card-title">Organic</h5>
+                        <p class="card-text">Fresh and organic ingredients for the healthiest meals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle card click -->
+    <script src="js/script.js"></script>
+
+    <!-- Bootstrap JS, Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

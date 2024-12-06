@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Kits - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for featured meal kits and navbar */
+        .meal-kit-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-inner img {
+            height: 550px;
+            object-fit: cover;
+        }
+        @media (max-width: 576px) {
+    .carousel-inner img {
+        object-fit: cover;
+        height: 300px; /* Keep the height the same for mobile screens */
+    }
+}
+
+        .featured-meal-kits {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+        .Promotional
+        {
+            background-color: #f8f9fa;
+
+        }
+        .meal-category-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid ">
+            <a class="navbar-brand fw-semibold text-warning fs-3" href="#">Meal Kits.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link  fw-semibold text-warning px-4" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#blogSection">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#faqSection">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-light px-4" href="#userProfileSection">User Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Promotional Banner -->
+    <div class="Promotional">
+        <div class="container-fluid p-0">
+            <div id="promoBanner" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://img.freepik.com/premium-photo/sharad-purnima-joy-concept-white-background-festive-scene-with-detailed-thali-text-ideal-fo_980716-486861.jpg?w=1060" class="d-block w-100 py-5" alt="Promo 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://uploads-ssl.webflow.com/5f00d108e4e56c01c959e07a/5fa6b2652611803f3e0a182d_3%20Family%20meal%20kits%20ideas%20to%20increase%20online%20food%20orders%20restolabs.png" class="d-block w-100 py-5" alt="Promo 2">
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#promoBanner" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#promoBanner" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+ <!-- Featured Meal Kits -->
+<div class="featured-meal-kits text-center">
+    <h2>Featured Meal Kits</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card meal-kit-card">
+                    <img src="https://b.zmtcdn.com/data/dish_photos/d8e/fd551418133d5b37fa9b58e7e91a2d8e.jpg" class="card-img-top" alt="Vegan Meal Kit">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Rice</h5>
+                        <p class="card-text text-secondary">A South Indian dish made with rice, yoghurt and tempered with spices.</p>
+                        <a href="#" class="btn btn-primary">View Meal Kit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card meal-kit-card">
+                    <img src="https://b.zmtcdn.com/data/pictures/2/21236422/a666ed62165a7c268c35799bfaa6c67a_o2_featured_v2.jpg" class="card-img-top" alt="Gluten-Free Meal Kit">
+                    <div class="card-body">
+                        <h5 class="card-title">Andra Meals</h5>
+                        <p class="card-text text-secondary">South Indian food Andra meals with different curry</p>
+                        <a href="#" class="btn btn-primary">View Meal Kit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card meal-kit-card">
+                    <img src="https://party.manis.in/cdn/shop/files/ChickenBiryaniBucketCombos-v2.jpg?v=1716802371" class="card-img-top" alt="Family Meal Kit">
+                    <div class="card-body">
+                        <h5 class="card-title">Biryani with combos</h5>
+                        <p class="card-text text-secondary">Tasty Hyderabad biryani made with aromatic spices and tender meat.</p>
+                        <a href="#" class="btn btn-primary">View Meal Kit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Meal Categories -->
+<div class="container mt-5">
+    <h2 class="text-center">Meal Categories</h2>
+    <div class="row">
+        <div class="col-12 col-md-4 mb-4 take">
+            <a href="categories.html" class="card meal-category-card" style="text-decoration: none; color: black;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5AMULerpviqV90UL7kHZbSbBk3qS4hHGkdA&s" class="card-img-top" alt="Vegan">
+                <div class="card-body">
+                    <h5 class="card-title">Veg Items</h5>
+                    <p class="card-text text-secondary">All veg items available here</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-4 mb-4 take">
+            <a href="categories.html" class="card meal-category-card" style="text-decoration: none; color: black;">
+                <img src="https://img.freepik.com/free-photo/top-view-arrangement-with-tasty-food-doughnuts_23-2148308879.jpg?t=st=1733486786~exp=1733490386~hmac=a4a63594acad54f6b8430003851dc461aa1463d494c9a180f7a8ea7a35a1b2ff&w=826" class="card-img-top" alt="Gluten-Free">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza & Burgers</h5>
+                    <p class="card-text text-secondary">Pizza and Burgers are available here</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-4 mb-4 take">
+            <a href="categories.html" class="card meal-category-card" style="text-decoration: none; color: black;">
+                <img src="https://www.shutterstock.com/image-photo/assorted-famous-indian-pakistani-food-600nw-2138815627.jpg" class="card-img-top" alt="Family Meals">
+                <div class="card-body">
+                    <h5 class="card-title">Family Combo Biryanies</h5>
+                    <p class="card-text text-secondary">combos with biryanies here</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS, Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
